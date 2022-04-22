@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(3, 3, 3, 0.274);
+}
+
+
+/* Nav */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+.top-nav {
+    display: grid;
+}
+
+.top-nav-left {
+    /* display: flex; */
+    float: inline-start;
+}
+
+
+/* Container */
+
+.container>.content {
+    text-align: center;
+}
