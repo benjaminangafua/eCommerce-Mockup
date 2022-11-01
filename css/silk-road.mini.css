@@ -57,7 +57,9 @@ a {
 
 .home {
     display: grid;
-    grid-template-columns: 15% auto;
+    grid-template-columns: 20% auto;
+    justify-items: start;
+    align-items: center;
 }
 
 .divider {
@@ -72,7 +74,11 @@ a {
 }
 
 .aut1 {
-    padding: 8px 10px;
+    padding: 8px 0px 8px 10px;
+}
+
+.aut1:first-child {
+    padding: 8px;
 }
 
 .aut-m {
@@ -104,7 +110,6 @@ a {
 .main {
     display: grid;
     margin-top: 10%;
-    display: grid;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -275,7 +280,7 @@ input[type=range]::-moz-range-thumb {
 
 .bottom-l {
     display: grid;
-    grid-template-columns: 30% 10% 0%;
+    grid-template-columns: auto auto;
 }
 
 .grt_than {
@@ -289,9 +294,8 @@ input[type=range]::-moz-range-thumb {
 .main-login {
     display: grid;
     grid-template-columns: 54% auto;
-    margin: 10% 17% 5% 17%;
-    padding: 60px 50px;
-    display: grid;
+    margin: 9.99% 17%;
+    padding: 70px 50px;
     color: #fff;
     border: 1px solid #fff;
     background-color: rgba(0, 0, 0, 0.719);
@@ -304,7 +308,7 @@ input[type=range]::-moz-range-thumb {
 
 .login-form {
     display: grid;
-    margin: -28.5% 20% 0% 53%;
+    margin: -35% 20% 0% 53%;
     padding: 20px 40px 29px 40px;
     background-color: #fff;
 }
@@ -369,9 +373,8 @@ input[type=range]::-moz-range-thumb {
 .main-rg {
     display: grid;
     grid-template-columns: auto 54%;
-    margin: 10% 17% 9.4% 17%;
-    padding: 60px 50px;
-    display: grid;
+    margin: 10% 17%;
+    padding: 50px 50px 70px 50px;
     color: #fff;
     border: 1px solid #fff;
     background-color: rgba(0, 0, 0, 0.719);
@@ -380,7 +383,7 @@ input[type=range]::-moz-range-thumb {
 .rg-form {
     display: grid;
     margin: -35% 53% 0%20%;
-    padding: 15px 40px 20px 40px;
+    padding: 13px 40px;
     background-color: #fff;
 }
 
@@ -698,3 +701,121 @@ input[type=range]::-moz-range-thumb {
 .silkroad-end {
     justify-self: end;
 }
+
+@media (max-width:768px) {
+    /* General */
+    .container {
+        height: 100vh;
+    }
+    .nav {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .logo {
+        padding: 25px;
+        font-weight: 900;
+        font-size: 20px;
+        letter-spacing: 0.01px;
+        word-spacing: 0.01px;
+        text-align: center;
+    }
+    .sidebar {
+        margin: 2%;
+    }
+    .bottom-l {
+        grid-template-columns: auto auto auto;
+    }
+    .home {
+        grid-template-columns: 35% auto;
+        justify-items: start;
+        align-items: center;
+    }
+    .nav {
+        width: 100%;
+    }
+    .header {
+        display: block;
+    }
+    /* Main  Page*/
+    .main {
+        margin: 10% 3%;
+    }
+    .main div:first-child {
+        font-size: 1.75rem;
+    }
+    .aut1 {
+        padding: 4px;
+    }
+    .main-widget {
+        margin: 10% 5%;
+    }
+    /* Login */
+    .main-login {
+        display: block;
+        margin: 8.38% 5%;
+        padding: 60px 50px;
+    }
+    .login-form {
+        display: grid;
+        margin: 3% 5% 0% 5%;
+        /* padding: 20px 40px 29px 40px; */
+    }
+    .main-rg {
+        display: block;
+        margin: 4% 5%;
+        padding: 50px 50px 70px 50px;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: rgba(0, 0, 0, 0.719);
+    }
+    /* Registration */
+    .rg-form {
+        display: grid;
+        margin: 3% 5% 0% 5%;
+        padding: 13px 40px;
+        background-color: #fff;
+    }
+    .input1 select {
+        padding: 8px 3px;
+    }
+    /* Grid Layout */
+    .grid-container {
+        display: block;
+        margin: 2%;
+    }
+    .content-nav {
+        display: none;
+    }
+    .content-grids {
+        display: block;
+        margin: 2%;
+    }
+    .content-grid {
+        display: block;
+    }
+    /* List Layout */
+    .carts-ls {
+        display: block;
+        margin-bottom: 3%;
+    }
+    .top-carts-ls {
+        display: block;
+    }
+    .img-ls img {
+        width: 100%;
+    }
+    .ls-r {
+        display: grid;
+        align-items: end;
+        margin-right: 0;
+    }
+    .advertisement {
+        display: none;
+    }
+    .top-ftr {
+        display: block;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width:667px) {}
