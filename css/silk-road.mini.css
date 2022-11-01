@@ -705,7 +705,8 @@ input[type=range]::-moz-range-thumb {
 @media (max-width:768px) {
     /* General */
     .container {
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 10%;
     }
     .nav {
         font-size: 14px;
@@ -758,7 +759,7 @@ input[type=range]::-moz-range-thumb {
     }
     .login-form {
         display: grid;
-        margin: 3% 5% 0% 5%;
+        margin: 3% 5% 10% 5%;
         /* padding: 20px 40px 29px 40px; */
     }
     .main-rg {
@@ -795,7 +796,8 @@ input[type=range]::-moz-range-thumb {
         display: block;
     }
     /* List Layout */
-    .carts-ls {
+    .carts-ls,
+    .carts {
         display: block;
         margin-bottom: 3%;
     }
