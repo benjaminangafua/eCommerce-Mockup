@@ -724,6 +724,7 @@ input[type=range]::-moz-range-thumb {
     }
     .bottom-l {
         grid-template-columns: auto auto auto;
+        gap: 35%;
     }
     .home {
         grid-template-columns: 35% auto;
@@ -815,6 +816,12 @@ input[type=range]::-moz-range-thumb {
     .top-ftr {
         display: block;
         padding: 12px 15px;
+    }
+    .grtr {
+        display: none;
+    }
+    .bottom-content {
+        padding-bottom: 8.4%;
     }
 }
 
