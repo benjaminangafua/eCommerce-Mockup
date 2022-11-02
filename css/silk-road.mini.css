@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"); */
+
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.418)), url("../images/building4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -22,6 +24,10 @@ body {
 a {
     text-decoration: none;
     color: #B5BABF;
+}
+
+a i {
+    color: #646668 !important;
 }
 
 .active {
@@ -74,7 +80,7 @@ a {
 }
 
 .aut1 {
-    padding: 8px 0px 8px 10px;
+    padding: 8px 0px 0px 10px;
 }
 
 .aut1:first-child {
@@ -277,6 +283,10 @@ input[type=range]::-moz-range-thumb {
 
 
 /*LOGIN PAGE */
+
+.log-contain {
+    height: 100vh;
+}
 
 .bottom-l {
     display: grid;
@@ -744,9 +754,6 @@ input[type=range]::-moz-range-thumb {
     }
     .main div:first-child {
         font-size: 1.75rem;
-    }
-    .aut1 {
-        padding: 4px;
     }
     .main-widget {
         margin: 10% 5%;

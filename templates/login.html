@@ -8,13 +8,15 @@
     , initial-scale=1.0">
     <title>LOGIN PAGE</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2cbdfe2c2a.js" crossorigin="anonymous"></script>
+
     <style>
         @import url("../css/silk-road.mini.css");
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container log-contain">
         <div class="header">
             <div class="logo">SILKROAD</div>
             <div class="nav">
@@ -51,32 +53,30 @@
                 <div></div>
             </div>
         </div>
-        <div>
-            <!-- Login Form -->
-            <form action="">
-                <div class="login-form">
-                    <div class="heading">
-                        <h2>LOGIN</h2>
-                    </div>
-                    <div class="log-input">
-                        <div class="input1">
-                            <select name="c-code" id="">
+
+        <!-- Login Form -->
+        <form action="">
+            <div class="login-form">
+                <div class="heading">
+                    <h2>LOGIN</h2>
+                </div>
+                <div class="log-input">
+                    <div class="input1">
+                        <select name="c-code" id="">
                                 <option value="+231">+231</option>
                                 <option value="+234">+234</option>
                                 <option value="+134">+134</option>
                                 <option value="+412">+412</option>
                             </select> <input type="text" placeholder="Phone number"></div>
-                        <div class="input2"><input type="text" placeholder="Password"></div>
-                        <div class="forget-password"><strong>Forgot password?</strong></div>
-                        <div class="btn"><button>Login</button></div>
-                    </div>
-                    <div class="log-option">
-                        <div>Log in with FB TW</div>
-                    </div>
+                    <div class="input2"><input type="text" placeholder="Password"></div>
+                    <div class="forget-password"><strong>Forgot password?</strong></div>
+                    <div class="btn"><button>Login</button></div>
                 </div>
-                <div></div>
-            </form>
-        </div>
+                <div class="log-option">
+                    <div>Log in with <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i></div>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 
